@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.compositeStructurePlugin"
+		name="Composite Structure Diagram Plugin"
+		description="Sample plugin for generating Composite Structure Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.compositeStructurePlugin.CompositeStructurePlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.compositeStructurePlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.compositeStructurePlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.compositeStructurePlugin.actionset1.CompositeStructureActionControl"
+					actionType="generalAction"
+      		name="Composite Structure Diagram Plugin"
+		      description="Sample plugin for generating Composite Structure Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Composite Structure Diagram"
+					toolbarPath="com.vp.plugin.sample.compositeStructurePlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.compositeStructurePlugin.CompositeStructureAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
